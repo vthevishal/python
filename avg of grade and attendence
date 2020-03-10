@@ -1,0 +1,17 @@
+a=int(input("enter grade1\t"))
+b=int(input("enter grade2\t"))
+d=int(input("enter total number of class\t"))
+c=int(input("enter total number of absent\t"))
+e=(a+b)/2                                                #avg_of_grade
+print('avg_of_grade is {}'.format(e))
+f=((d-c)/d)*100                                          #avg_of_attendence
+print("The attendance rate is ",(round(f,2)),"%" )
+if(f>=80):                                              #chk attendance is above 80%
+    if(e>=6):   #chk grade is above 6
+        print("You are  approved")
+    else:
+        print("You are Failed due to Grade")
+elif(e>=6):                                             #chk Failed only in attendance and not in Grade
+    print("You are Failed due to lack of attendance")
+else:
+    print("You Failed due to attendance and Grade")
