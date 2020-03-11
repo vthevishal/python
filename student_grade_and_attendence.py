@@ -17,7 +17,7 @@ while(True):
         c=int(input("enter total number of class\t"))
         if(c!=0): #To avoid divide by zero error
             break
-    except:
+    except:#IF IT'S A STR THEN EXECUTE THIS PART
         print("try again")
 while(True):
     try:
