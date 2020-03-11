@@ -1,4 +1,4 @@
-print("---Student grade and attendence generator---")
+print("---Student grade and attendance generator---")
 z=input("enter your name\t ")
 while(True):
     try:
